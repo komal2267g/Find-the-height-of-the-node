@@ -47,6 +47,7 @@ int getHeight(struct node* root) {
     int rightHeight = getHeight(root->right);
     return (leftHeight > rightHeight ? leftHeight : rightHeight) + 1;
 }
+
 int main() {
   
     struct node* root = NULL;
